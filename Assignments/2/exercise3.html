@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>A simple virtual keyboard</h1>
+    <button type="button" onclick="keyb(this.id)" id="A">A</button>
+    <button type="button" onclick="keyb(this.id)" id="B">B</button>
+    <button type="button" onclick="keyb(this.id)" id="C">C</button>
+    <button type="button" onclick="keyb(this.id)" id="D">D</button>
+    <button type="button" onclick="keyb(this.id)" id="E">E</button>
+    <button type="button" onclick="keyb(this.id)" id="F">F</button>
+    <button type="button" onclick="keyb(this.id)" id="G">G</button>
+    <button type="button" onclick="keyb(this.id)" id="H">H</button>
+    <button type="button" onclick="keyb(this.id)" id=" ">Space</button>
+    <p id="result"></p>
+
+    <script>
+      function keyb(clicked){
+        document.getElementById("result").innerHTML += clicked;
+        //Each time user clicks on button, it concatanates
+      }
+
+    </script>
+
+
+  </body>
+</html>

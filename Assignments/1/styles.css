@@ -1,0 +1,112 @@
+body{
+  background-color: #F8F8FF;
+}
+h1{
+  color: #00FFFF;
+
+}
+.headerTabs{
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  color: #00FFFF;
+
+}
+
+.headerTabs a{
+  padding: 15px;
+  color: #F0FFFF;
+  text-decoration: none;
+
+}
+
+.headerTabs a:hover{
+  background-color: #00FFFF;
+  color: #000000;
+}
+
+.nameHeading{
+  background: url(stars.jpg);
+  height: 150px;
+  width: auto;
+  text-align: center;
+
+}
+
+.nameHeading{
+  color: white;
+  padding-top: 50px;
+}
+
+.container{
+  width: auto;
+  margin: 50px;
+  height: 375px;
+  padding-bottom: 25px;
+}
+
+.threeDivs{
+  float: left;
+  width: 33%;
+}
+
+.threeDivs img{
+  width: 300px;
+  height: 400px;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+
+table{
+  margin: 25px auto auto auto;
+  padding: 20px;
+  width: 25%;
+  text-align: center;
+  border: 1px solid black;
+}
+th{
+  background-color: #00FFFF;
+  color: #000000;
+  border: 1px solid black;
+
+}
+td{
+  border: 1px solid black;
+
+}
+tr:hover{
+  background-color: #00FFFF;
+  color: #000000;
+}
+
+
+
+
+/* Resume Page */
+
+.wrapper h1{
+  color: black;
+}
+
+.wrapper{
+  width: 50%;
+}
+.firstWrapper{
+  width: 66%;
+  float: left;
+}
+.secondWrapper{
+  overflow: hidden;
+}
+
+.redAndBold{
+  color: red;
+  font-weight: bold;
+}

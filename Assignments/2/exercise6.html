@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Log in</h1>
+    <form method="post" onsubmit="veri()">
+      <label for="uname">Username</label>
+      <input type="text" name="uname" value="" id="uname">
+      <br>
+      <label for="passw">Password</label>
+      <input type="text" name="passw" value="" id="passw">
+      <br>
+      <input type="Submit" name="" value="Login">
+    </form>
+
+
+
+
+    <script>
+      function veri(){
+      var username = ["user1", "user2", "user3"];
+      var password = ["user1-111", "user2-222", "user3-333"];
+
+      //gets values from input boxes
+      var name = document.getElementById("uname").value;
+      var pass = document.getElementById("passw").value;
+
+      //loops through username array to compare inputs and stored info
+      for(let i = 0; i < username.length; i++){
+        if(name === username[i]){
+          if(pass === password[i]){
+            alert("You are signed in!");
+            return;
+          }else{
+            alert("Incorrect Password");
+            return;
+          }
+        }
+      }
+      alert("The username does not exist");
+
+
+      }
+
+    </script>
+  </body>
+</html>

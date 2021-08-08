@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      table, th,td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body onload="createTable()">
+    <h1>Array to Table</h1>
+    <table></table>
+
+
+    <script>
+
+    function createTable(){
+        let students = [
+          {name: "Andy", id: 001, major:"Computer Science"},
+          {name: "Ben", id: 002, major:"Biology"},
+          {name: "Hari", id: 003, major:"Computer Science"},
+          {name: "Lisa", id: 004, major:"Physics"},
+          {name: "Wendy", id: 005, major:"Math"},
+        ];
+
+        let table = document.querySelector("table");  //grabs the table from html
+        let data = Object.keys(students[0]);
+
+        let head = table.createTHead();          //creates the thead
+        let row = head.insertRow();              //creates the row in head
+        for (let key of data) {                  //for loop to search for the table headers inside the array
+          let th = document.createElement("th");   //creates new th
+          let text = document.createTextNode(key);  //sets the key value, which is one of the table headers
+          th.appendChild(text);                  //puts table header inside table
+          row.appendChild(th);
+          }
+
+        for (let element of students) {      //loop through array for values to place in table
+          let row = table.insertRow();
+          for (key in element) {
+              let cell = row.insertCell();
+              let text = document.createTextNode(element[key]);    //gets the value of each element in array
+              cell.appendChild(text);
+            }
+        }
+    }
+    </script>
+  </body>
+</html>

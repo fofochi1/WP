@@ -1,0 +1,117 @@
+body{
+  background-color: #F0FFF0;
+  text-align: center;
+  font-family: sans-serif;
+  color: #000000;
+}
+
+button{
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  color: black;
+  border: 2px solid black;
+}
+button:hover{
+  background-color: #008CBA;
+  color: white;
+}
+
+.header{
+  margin: 5%;
+}
+
+.header button{
+  margin-top: 10px;
+}
+
+/* Home page divs */
+#home-navbar{
+  margin-left: .5rem;
+  margin-right: .3125rem;
+}
+
+#leftbox{
+  float:left;
+  width: 33%;
+  height: auto;
+}
+#middlebox{
+  float:left;
+  width: 33%;
+  height: auto;
+}
+#rightbox{
+  float:left;
+  width: 33%;
+  height: auto;
+}
+
+/*Game divs display*/
+
+.columns {
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 0;
+  width: 100%;
+}
+
+.left-div {
+  display: inline-block;
+  max-width: 50%;
+  text-align: left;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px;
+  vertical-align: top;
+}
+
+.right-div {
+  display: inline-block;
+  max-width: 50%;
+  text-align: left;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.left-text,
+.right-text {
+  text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+  .left-div,
+  .right-div {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/*Navbar*/
+ul{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+  list-style: none;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+li a:hover{
+  background-color: black;
+}

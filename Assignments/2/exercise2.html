@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>A very simple calculator</h1>
+    <label for="num1">Number 1: </label><input id="num1">
+    <br>
+    <label for="num2">Number 2: </label><input id="num2">
+    <br>
+    <div style="overflow: hidden;">
+      <p style="float: left";>Result: </p>
+      <p style="float: left; color:red;" id="result"></p>
+    </div>
+    <button type="button" onclick="myAdd()">Add</button>
+    <button type="button" onclick="mySub()">Subtract</button>
+    <button type="button" onclick="myMul()">Multiply</button>
+    <button type="button" onclick="myQuo()">Quotient</button>
+
+
+    <script>
+      function myAdd(){
+        num1 = document.getElementById("num1").value;
+        num2 = document.getElementById("num2").value;
+
+        result = (+num1 + +num2);      //Looking online, this was the only way I was able to figure out how to add instead of concatate
+        document.getElementById("result").innerHTML = result;
+      }
+
+      function mySub(){
+        num1 = document.getElementById("num1").value;
+        num2 = document.getElementById("num2").value;
+
+        result = (num1 - num2);
+        document.getElementById("result").innerHTML = result;
+      }
+
+      function myMul(){
+        num1 = document.getElementById("num1").value;
+        num2 = document.getElementById("num2").value;
+
+        result = num1 * num2;
+        document.getElementById("result").innerHTML = result;
+      }
+
+      function myQuo(){
+        num1 = document.getElementById("num1").value;
+        num2 = document.getElementById("num2").value;
+
+        result = Math.floor(num1 / num2);      //Used math.floor so that that it wouldn't show the remainder of the division
+        document.getElementById("result").innerHTML = result;
+
+
+      }
+
+    </script>
+
+  </body>
+</html>

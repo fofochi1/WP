@@ -1,0 +1,22 @@
+body{
+  text-align: center;
+}
+ul{
+  list-style: none;
+}
+.container{
+  border: 3px solid #fff;
+  padding: 20px;
+}
+.left-child{
+  width: 25%;
+  float: left;
+  padding: 20px;
+  border: 2px solid black;
+}
+.right-child{
+  width: 68%;
+  float: left;
+  padding: 20px;
+  height: 100%;
+}

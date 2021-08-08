@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Check which items you want to buy</h1>
+    <form onsubmit="ingredients()">
+
+    <input type="checkbox" name='milk' id="milk" value="milk">
+    <label for="milk">Milk</label>
+    <br>
+    <input type="checkbox" name='bread' id="bread" value="bread">
+    <label for="bread">Bread</label>
+    <br>
+    <input type="checkbox" name='soda' id="soda" value="soda">
+    <label for="soda">Soda</label>
+    <br>
+    <input type="checkbox" name='eggs' id="eggs" value="eggs">
+    <label for="eggs">Eggs</label>
+    <br>
+    <input type="checkbox" name='pasta' id="pasta" value="pasta">
+    <label for="pasta">Pasta</label>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    function ingredients(){
+
+      var first = document.getElementById("milk");
+      var second = document.getElementById("bread");
+      var third = document.getElementById("soda");
+      var fourth = document.getElementById("eggs");
+      var fifth = document.getElementById("pasta");
+
+      var res=" ";
+      if (first.checked == true){
+        var milk = document.getElementById("milk").value;
+        res = milk + ", ";
+      }
+
+      //checks that second box is checked
+      if (second.checked == true){
+        //if yes checks if previos box were ckecked
+        if(first.checked == false){
+          var bread = document.getElementById("bread").value;
+          res = bread + ", ";
+        }else{
+        var bread = document.getElementById("bread").value;
+        res = res + bread + ", ";
+        }
+      }
+      //checks that third box is checked
+      if (third.checked == true){
+        //if yes checks if previos box were ckecked
+        if(first.checked == false && second.checked == false){
+          var soda = document.getElementById("soda").value;
+          res = soda + ", ";
+        }else{
+        var soda = document.getElementById("soda").value;
+        res = res + soda + ", ";
+        }
+      }
+      //checks that fourth box is checked
+      if (fourth.checked == true){
+        //if yes checks if previos box were ckecked
+        if(first.checked == false && second.checked == false && third.checked == false){
+          var eggs = document.getElementById("eggs").value;
+          res = eggs + ", ";
+        }else{
+        var eggs = document.getElementById("eggs").value;
+        res = res + eggs + ", ";
+        }
+      }
+      //checks that fifth box is checked
+      if (fifth.checked == true){
+        //if yes checks if previos box were ckecked
+        if(first.checked == false && second.checked == false && third.checked == false && fourth.checked == false){
+        var pasta = document.getElementById("pasta").value;
+        res = res + pasta;
+        }else{
+        var pasta = document.getElementById("pasta").value;
+        res = res + pasta;
+      }
+    }
+
+    alert(res + " are in your cart");
+
+  }
+  </script>
+
+  </body>
+</html>

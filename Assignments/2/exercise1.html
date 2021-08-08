@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Say hello to yourself</h1>
+    <label for="name">Name: </label><input id="name">
+    <button class="btn" type="button" onclick="myAlert()">Submit</button>
+
+    <script>
+      function myAlert(){
+        name = document.getElementById("name").value;
+        alert("Hello " + name);
+      }
+
+    </script>
+
+  </body>
+</html>

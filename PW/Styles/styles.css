@@ -1,0 +1,19 @@
+body{
+  background-color: #F0FFF0;
+  text-align: center;
+  font-family: 'Pattaya', sans-serif;
+  color: #000000;
+}
+
+.header{
+  margin: 5%;
+}
+
+.header button{
+  margin-top: 10px;
+}
+
+#home-navbar{
+  margin-left: .5rem;
+  margin-right: .3125rem;
+}
